@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+
+    <title>我的</title>
+
+    <!--基础样式-->
+    <link href="../../static/css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../../static/css/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="../../static/css/size-parameters.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="my-content">
+    <div class="my-head">
+      <img src="../../static/image/my-bg.png" alt="">
+      <span class="my-title">我的</span>
+    </div>
+    <ul class="my-list">
+        <li>
+            <a href="javaScript:void(0)" class="flex flex-between" @click="toDetail">
+              <div class="flex flex-center">
+                <div class="icon-box flex flex-center">
+                    <i class="iconfont icon-chexing"></i>
+                </div>
+                <span class="my-item" v-cloak>{{msg}}</span>
+              </div>
+              <i class="iconfont icon-dibuanniujiantou"></i>
+            </a>
+        </li>
+    </ul>
+<!--    <div class="sign-out-box">
+      <a class="sign-out-btn flex flex-center"> 
+        退出
+      </a>
+    </div>-->
+    <p class="version">Version 1.0.1</p>
+  </div>
+
+  <!-- 底部tab -->
+    <div class="foot-nav">
+        <div class="foot-fixed">
+            <ul class="flex">
+                <li class="flex-one">
+                    <a href="index.html">
+                        <p>
+                            <span>
+                                <i class="iconfont icon-shouye"></i>
+                            </span>
+                        </p>
+                        <p class="title">首页</p>
+                    </a>
+                </li>
+                <li class="flex-one">
+                    <a href="community.html">
+                        <p>
+                           <span><i class="iconfont icon-shequ"></i></span>
+                        </p>
+                        <p class="title">社区</p>
+                    </a>
+                </li>
+                <li class="flex-one">
+                    <a href="mall.html">
+                        <p>
+                            <span><i class="iconfont icon-shangcheng"></i></span>
+                        </p>
+                        <p class="title">商城</p>
+                    </a>
+                </li>
+                <!-- <li class="flex-one">
+                    <a href="javascript:void();">
+                        <p>
+                            <span><i class="iconfont icon-chezhu"></i></span>
+                        </p>
+                        <p class="title">车主</p>
+                    </a>
+                </li> -->
+                <li class="flex-one active">
+                    <a href="my-account.html">
+                        <p>
+                            <span><i class="iconfont icon-wode"></i></span>
+                        </p>
+                        <p class="title">我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../../static/js/jquery.js" type="text/javascript"></script>
+    <script src="../../static/js/fontsize.js" type="text/javascript"></script>
+    <script src="../../static/js_slave/app.js" type="text/javascript"></script>
+    <script src="../../static/js/vue.min.js" type="text/javascript"></script>
+    <script src="../../static/js_slave/my-account.js" type="text/javascript"></script>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

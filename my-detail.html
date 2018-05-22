@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+
+  <title>S01选配</title>
+  <!--weui-->
+  <link href="../../static/css/weui.css" type="text/css" rel="stylesheet" />
+  <link href="../../static/css/jquery-weui.css" type="text/css" rel="stylesheet" />
+  <link href="../../static/css/baitu.weui.css" type="text/css" rel="stylesheet" />
+
+  <!--基础样式-->
+  <link href="../../static/css/common.css" type="text/css" rel="stylesheet" />
+  <link href="../../static/css/iconfont.css" type="text/css" rel="stylesheet" />
+  <link href="../../static/css/match.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="header-box">
+    <div class="header-fixed">
+      <a href="javascript:history.back();" class="back-btn">
+        <i class="iconfont icon-zhuangtailanjiantou"></i>
+      </a>
+      <span class="title">S01选配</span>
+    </div>
+  </header>
+  <div class="match-result-wrap">
+    <!-- swiper -->
+    <div class="swiper-container top-line">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../../static/image/car-style01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../static/image/car-style01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../static/image/car-style01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../static/image/car-style01.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="main-content">
+      <p class="style-title" v-cloak>{{title}}</p>
+      <div class="has-choosed flex flex-between">
+        <div class="vertical-line"></div>
+        <div>
+          <p class="out-show">外观</p>
+          <p class="choose-item" v-cloak>{{color}}</p>
+          <div class="flex flex-center facade">
+            <div class="flex flex-center">
+              <img src="../../static/image/color-style02.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="out-show">内饰</p>
+          <p class="choose-item" v-cloak>{{interior}}</p>
+          <div class="flex flex-center facade interior">
+            <div class="flex flex-center">
+              <img src="../../static/image/match_1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-box">
+    <div class="foot-fixed">
+      <p class="word cent">S01开始预订时，您将会收到免费短信通知</p>
+    </div>
+  </div>
+
+
+  <script src="../../static/js/jquery.js" type="text/javascript"></script>
+  <script src="../../static/js/fontsize.js" type="text/javascript"></script>
+  <script src="../../static/js/vue.min.js" type="text/javascript"></script>
+  <script src="../../static/js_slave/app.js" type="text/javascript"></script>
+  <script src="../../static/js_slave/my-detail.js" type="text/javascript"></script>
+
+  <!--weui-->
+  <script src="../../static/js/jquery-weui.min.js" type=" text/javascript"></script>
+  <script src="../../static/js/swiper.js" type=" text/javascript"></script>
+  <script>
+    $(function () {
+      //焦点图
+      $(function () {
+        $(".swiper-container").swiper({
+          loop: false,
+          autoplay: 4000
+        });
+      })
+    })
+  </script>
+
+
+</body>
+
+</html>
